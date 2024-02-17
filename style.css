@@ -1,0 +1,180 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.previewCardContainer {
+    position: relative;
+    height: 600px;
+    width: 700px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.previewCardContainer img {
+    height: 600px;
+    width: 350px;
+    display: inline-block;
+    border-radius: 10px 0px 0px 10px;
+}
+
+aside {
+    display: inline-block;
+    position: relative;
+    bottom: 120px;
+    left: 20px;
+}
+
+aside h1 {
+    font-family: "Fraunces", serif;
+    font-size: 2.5rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+aside p {
+    font-family: "Montserrat", sans-serif;
+    color: hsl(228, 12%, 48%);
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+aside h2 {
+    font-family: "Fraunces", serif;
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%)
+}
+
+aside span {
+    position: relative;
+    right: 20px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+aside button {
+    height: 65px;
+    width: 300px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: hsl(158, 36%, 37%);
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 750;
+}
+
+aside button::before {
+    content: url(./imgs/icon-cart.svg);
+    padding-right: 15px;
+}
+
+#titleOne {
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.3em;
+    font-size: 1rem;
+    bottom: 15px;
+
+}
+
+@media (max-width:700px) {
+
+    .previewCardContainer {
+        position: relative;
+        height: 550px;
+        width: 375px;
+        background-color: white;
+        border-radius: 10px;
+
+    }
+
+
+    .previewCardContainer img {
+        border-radius: 10px 10px 0px 0px;
+        height: 200px;
+        width: 375px;
+        content: url(./imgs/image-product-mobile.jpg)
+    }
+
+    #titleOne {
+        position: relative;
+        font-family: "Montserrat", sans-serif;
+        color: hsl(228, 12%, 48%);
+        letter-spacing: 0.3em;
+        font-size: 0.8rem;
+        bottom: 15px;
+
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+
+    aside h1 {
+        font-family: "Fraunces", serif;
+        font-size: 1.5rem;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    aside p {
+        font-family: "Montserrat", sans-serif;
+        color: hsl(228, 12%, 48%);
+        text-align: justify;
+        font-size: 0.9rem;
+    }
+
+    aside h2 {
+        font-family: "Fraunces", serif;
+        font-size: 1.8rem;
+        color: hsl(158, 36%, 37%)
+    }
+
+    aside h2,
+    span {
+        position: relative;
+        bottom: 28px;
+    }
+
+
+    aside span {
+        position: relative;
+        right: 10px;
+        text-decoration: line-through;
+        color: hsl(228, 12%, 48%);
+        font-size: 0.9rem;
+        font-weight: 500;
+        bottom: 4px;
+    }
+
+    aside button {
+        height: 50px;
+        width: 200px;
+        border-radius: 10px;
+        border-style: none;
+        background-color: hsl(158, 36%, 37%);
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        font-size: 0.5rem;
+        font-weight: 750;
+        position: relative;
+        bottom: 45px;
+        left: 10px;
+        width: 80%;
+    }
+
+
+}
